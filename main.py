@@ -49,10 +49,10 @@ Question:
 {body.question}"""
 
     completion = groq_client.chat.completions.create(
-        model="llama3-8b-8192",
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=500,
-    )
+    model="openai/gpt-oss-20b",
+    messages=[{"role": "user", "content": prompt}],
+    max_tokens=500,
+)
 
     return {"answer": completion.choices[0].message.content}
 
