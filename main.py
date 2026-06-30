@@ -11,7 +11,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://notable-media-frontend.onrender.com/"],  # replace with your actual frontend URL
+    allow_origins=["https://notable-media-frontend.onrender.com"],
     allow_methods=["POST"],
     allow_headers=["*"],
 )
