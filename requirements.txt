@@ -2,6 +2,6 @@ fastapi
 uvicorn
 faiss-cpu
 numpy
-sentence-transformers
+cohere
 groq
 python-dotenv
